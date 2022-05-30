@@ -15,22 +15,22 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button type="button-search" class="button">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button type="button-favorite" class="button">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <button type="button" class="button-wanna-here">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -56,24 +56,18 @@
             </p>            
           </li>
           <li class="advantages-item">
+            <svg width="75" height="72" class="house"></svg>
             <h3 class="advantages-title">Жильё</h3>
-            <p class="advantages-description">
-              <img src="#" alt="Домик">
-            </p>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item">
+            <svg width="74" height="70" class="burger"></svg>
             <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-description">
-              <img src="#" alt="Гамбургер">
-            </p>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
+            <svg width="64" height="76" class="souvenirs"></svg>
             <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages-description">
-              <img src="#" alt="Сувенир">
-            </p>
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
           <li class="advantages-item">
@@ -109,15 +103,16 @@
         <a class="interested-link" href="#">Поиск гостинницы в седоне</a>
       </section>
       <aside>
-        <h2 class="subscription">Подпишитесь на рассылку</h2>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email" name="email" id="#" placeholder="Ваш e-mail">
-        <button class="subscription-button">Подписаться</button>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="subscription">Подпишитесь на рассылку</h2>
+          <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <input type="email" name="email" id="#" placeholder="Ваш e-mail">
+          <button class="subscription-button">Подписаться</button>
+        </form>
       </aside>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visually-hidden">Список социальных сетей</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item"> 
             <a class="button" href="https://vk.com/htmlacademy">
@@ -135,17 +130,12 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
         <h2 class="visually-hidden">Телефон</h2>
-        <p class="tel">+7 (812) 812-12-12</p>
-      </section>
-      <section class="footer-logo">
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         <h2 class="visually-hidden">Логотип</h2>
         <a href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип">
         </a>
-      </section>
     </footer>
   </body>
 </html>
