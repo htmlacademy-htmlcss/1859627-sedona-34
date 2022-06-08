@@ -18,11 +18,119 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
     background: #FFFFFF;
     color: #333333;
 }
 
-.navigation {
-    background: #FFFFFF;
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
 }
+
+.button-wanna-here {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+}
+
+.description-text {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.description-header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.advantages-list {
+    text-align: center;
+}
+
+.advantages-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.advantages-number {
+    color: #000000;
+}
+
+.search {
+    text-align: center;
+}
+
+.interested {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.interested-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.interested-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#FFFFFF;
+    background: #756157;
+}
+
+.subscription {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url("../images/subscription-background.jpg");
+}
+
+.subscription-text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
+.subscription-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+.subscription-button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background: #82B3D3;
+}
+
+.tel {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
 
