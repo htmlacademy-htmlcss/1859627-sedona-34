@@ -7,7 +7,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/1859627-sedona-34/4/">
 </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav class="navigation">
         <img class="header-logo" src="images/header-logo.svg" width="139" height="70" alt="Логотип городка."> 
         <ul class="navigation-list">
@@ -23,21 +23,21 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <button type="button-search" class="button">
+            <button type="button" class="button-search">
               <span class="visually-hidden">Поиск.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <button type="button-favorite" class="button">
+            <button type="button" class="button-favorite">
               <span class="visually-hidden">Избранное.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <button type="button" class="button-wanna-here">Хочу сюда!</a>
+            <button type="button" class="button-wanna-here">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
-    </header class="page-header">
+    </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона.</h1>
         <img class="index-background" src="images/index-background.jpg" width="1200" height="485" alt="Живописные горы Седоны.">
@@ -52,8 +52,6 @@
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-number">— №1 —</p>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="advantages-item">
             <img class="advantages-image" src="images/town.jpg" width="800" height="384" alt="Небольшой городок.">
           </li>
           <li class="advantages-item">
@@ -69,9 +67,7 @@
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
           <li class="advantages-item">
-              <img class="advantages-image" src="images/canyon.jpg" width="800" height="384" alt="Большой каньон.">            
-          </li>
-          <li class="advantages-item">
+            <img class="advantages-image" src="images/canyon.jpg" width="800" height="384" alt="Большой каньон.">            
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-number">— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -102,7 +98,7 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="subscription-text">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <input type="email" name="email" id="#" placeholder="Ваш e-mail">
+          <input type="email" class="subscription-input" name="email" id="#" placeholder="Ваш e-mail">
           <button class="subscription-button">Подписаться</button>
         </form>
       </aside>
