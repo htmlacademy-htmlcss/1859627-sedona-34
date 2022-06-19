@@ -54,7 +54,7 @@ body {
 }
 
 .navigation-user {
-    max-width: 263.87px;
+    max-width: 264px;
     margin-left: auto;
     padding-right: 70px;
 }
@@ -110,7 +110,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);   
     text-align: center;
-    margin: auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -166,7 +166,6 @@ body {
     padding: 12px 15px;
     margin: auto;
     border-radius: 4px;
-    
 }
 
 .subscription {
@@ -233,6 +232,7 @@ body {
 
 .advantages-item {
     background: rgba(131, 179, 211, 0.12);
+    min-height: 384px;
 }
 
 .advantages-item:first-child {
@@ -261,26 +261,36 @@ body {
     flex-grow: 1;
 }
 
-.advantages-item:nth-child(2) .advantages-title, .advantages-item:nth-child(3) .advantages-title, .advantages-item:nth-child(4) .advantages-title{
-    margin: 30px 85px;
+.advantages-item:nth-child(2) .advantages-title, 
+.advantages-item:nth-child(3) .advantages-title, 
+.advantages-item:nth-child(4) .advantages-title {
+    margin: 0px 85px;
+    padding-top: 182px;
 }
 
-.advantages-item:nth-child(2) .advantages-description, .advantages-item:nth-child(3) .advantages-description, .advantages-item:nth-child(4) .advantages-description{
-    margin: 30px 85px 81px;
+.advantages-item:nth-child(2) .advantages-description, 
+.advantages-item:nth-child(3) .advantages-description, 
+.advantages-item:nth-child(4) .advantages-description {
+    margin: 30px 85px 0px;
 }
 
-.advantages-item:nth-child(6) .advantages-title, .advantages-item:nth-child(7) .advantages-title, .advantages-item:nth-child(8) .advantages-title{
+.advantages-item:nth-child(6) .advantages-title, 
+.advantages-item:nth-child(7) .advantages-title, 
+.advantages-item:nth-child(8) .advantages-title {
     margin: 103px 85px 30px;
 }
 
-.advantages-item:nth-child(6) .advantages-description, .advantages-item:nth-child(7) .advantages-description, .advantages-item:nth-child(8) .advantages-description{
-    margin: 30px 85px 102px;
+.advantages-item:nth-child(6) .advantages-description, 
+.advantages-item:nth-child(7) .advantages-description, 
+.advantages-item:nth-child(8) .advantages-description {
+    margin: 30px 85px 0px;
 }
 
 .page-footer {
     display: flex;
     justify-content: space-between;
-    margin: 40px 70px 30px;
+    margin: 0px 70px;
+    padding: 40px 0px 30px;
 }
 
 .footer-social-list {
@@ -298,3 +308,7 @@ body {
     overflow: hidden;
   }
 
+  .advantages-item:first-child .advantages-title,
+  .advantages-item:nth-child(5) .advantages-title {
+    color: #FFFFFF;
+  }
