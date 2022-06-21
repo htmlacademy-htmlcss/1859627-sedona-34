@@ -47,10 +47,13 @@ body {
 }
 
 .navigation-list {
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 390px;
     padding-left: 30px;
+    list-style-type: none;
+    display: flex;
 }
 
 .navigation-user {
@@ -60,12 +63,19 @@ body {
 }
 
 .navigation-link {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
     color: #000000;
     background: #FFFFFF;
+    padding: 20px 17px;
+}
+
+.navigation-user .navigation-link {
+    min-width: 18px;
+    min-height: 17px;
 }
 
 .button-wanna-here {
@@ -103,7 +113,6 @@ body {
     padding: 0px;
     width: 620px;
     margin: 63px auto 31px;
-
 }
 
 .advantages-list {
@@ -112,6 +121,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .advantages-title {
@@ -295,6 +305,14 @@ body {
 
 .footer-social-list {
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    min-width: 24px;
+    min-height: 17px;
+}
+
+.footer-social-item {
+    display: block;
 }
 
 .visually-hidden {
