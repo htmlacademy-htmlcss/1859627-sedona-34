@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/ptsans-400.woff2");
+    src: url("../fonts/ptsans-400.woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/ptsans-700.woff2");
+    src: url("../fonts/ptsans-700.woff2");
     font-display: swap;
 }
 
@@ -91,12 +91,8 @@ body {
     border: #756157;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-}
-
 .description-text {
+    display: block;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -104,6 +100,7 @@ body {
 }
 
 .description-header {
+    display: block;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -176,9 +173,12 @@ body {
     padding: 12px 15px;
     margin: auto;
     border-radius: 4px;
+    display: block;
+    width: 544px;
 }
 
 .subscription {
+    padding: 94px 0px;
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url("../images/subscription-background.jpg");
@@ -193,7 +193,6 @@ body {
     text-align: center;
     color:#FFFFFF;
     margin: 0px;
-    padding-top: 94px;
 }
 
 .subscription-description {
@@ -236,8 +235,12 @@ body {
     line-height: 21px;
     height: 60px;
     width: 600px;
-    margin-bottom: 94px;
-    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.subscription-container {
+    display: flex; 
+    justify-content: center;  
 }
 
 .advantages-item {
@@ -282,6 +285,7 @@ body {
 .advantages-item:nth-child(3) .advantages-description, 
 .advantages-item:nth-child(4) .advantages-description {
     margin: 30px 85px 0px;
+    padding-bottom: 81px;
 }
 
 .advantages-item:nth-child(6) .advantages-title, 
@@ -294,6 +298,7 @@ body {
 .advantages-item:nth-child(7) .advantages-description, 
 .advantages-item:nth-child(8) .advantages-description {
     margin: 30px 85px 0px;
+    padding-bottom: 102px;
 }
 
 .page-footer {
