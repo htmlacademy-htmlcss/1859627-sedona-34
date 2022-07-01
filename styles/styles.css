@@ -27,13 +27,15 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    background: #FFFFFF;
+    background: #F2F2F2;
     color: #333333;
 }
 
 .container {
     margin: 0 auto;
     width: 1200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
 }
 
 .navigation {
@@ -216,7 +218,7 @@ body {
     background: #82B3D3;
     border-radius: 0px 10px 10px 0px;
     min-height: 60px;
-    min-width: 200px;
+    width: 200px;
 }
 
 .tel {
@@ -242,7 +244,10 @@ body {
 
 .subscription-container {
     display: flex; 
-    justify-content: center;  
+    justify-content: center;
+}
+
+.subscription-form {      
     margin: 0px 20px;
 }
 
