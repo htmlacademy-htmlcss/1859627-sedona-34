@@ -91,6 +91,32 @@ body {
     background: #756157;
     border-radius: 4px;
     border: #756157;
+    padding: 9px 15px 8px;
+    margin: 14px 0px 14px 20px;
+}
+
+.button-search {
+    background-image: url('../images/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 19px;
+    height: 19px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 24px 12px;
+    box-sizing: content-box;
+}
+
+.button-favorite {
+    background-image: url('../images/icons/favorite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 17px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 24px 12px;
+    box-sizing: content-box;
 }
 
 .description-text {
@@ -221,6 +247,42 @@ body {
     width: 200px;
 }
 
+.button-vk {
+    background-image: url('../images/icons/vk.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 14px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 13px 12px;
+    box-sizing: content-box;
+}
+
+.button-telegram {
+    background-image: url('../images/icons/telegram.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 16px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 12px 15px;
+    box-sizing: content-box;
+}
+
+.button-youtube {
+    background-image: url('../images/icons/youtube.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 17px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 12px 13px;
+    box-sizing: content-box;
+}
+
 .tel {
     font-size: 40px;
     line-height: 40px;
@@ -327,6 +389,7 @@ body {
     list-style-type: none;
     min-width: 24px;
     min-height: 17px;
+    padding: 0;
 }
 
 .footer-social-item {
@@ -342,9 +405,61 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  .advantages-item:first-child .advantages-title,
-  .advantages-item:nth-child(5) .advantages-title {
+.advantages-item:first-child .advantages-title,
+.advantages-item:nth-child(5) .advantages-title {
     color: #FFFFFF;
-  }
+}
+
+.button-wanna-here:hover,
+.button-wanna-here:focus,
+.interested-link:hover, 
+.interested-link:focus {
+    background-color: #615048;
+    outline: none;
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+    background-color: #68A2CA;
+    outline: none;
+}
+
+.interested-link:active,
+.subscription-button:active,
+.button-wanna-here:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.tel:hover,
+.tel:focus {
+    color: #756157;
+}
+
+.tel:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-htmlacademy:hover {
+    fill: red;
+}
+
+.button-telegram:hover {
+    fill: red;
+}
+
+.advantages-item:nth-child(2) .advantages-title {
+    background-image: url('../images/icons/house.svg');
+    background-repeat: no-repeat;
+}
+
+.advantages-item:nth-child(3) .advantages-title {
+    background-image: url('../images/icons/burger.svg');
+    background-repeat: no-repeat;
+}
+
+.advantages-item:nth-child(4) .advantages-title {
+    background-image: url('../images/icons/present.svg');
+    background-repeat: no-repeat;
+}
