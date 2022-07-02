@@ -260,6 +260,7 @@ body {
     border-radius: 0px 10px 10px 0px;
     min-height: 60px;
     width: 200px;
+    border: none;
 }
 
 .tel {
@@ -281,6 +282,7 @@ body {
     height: 60px;
     width: 600px;
     box-sizing: border-box;
+    border: none;
 }
 
 .subscription-container {
@@ -437,9 +439,21 @@ body {
 }
 
 .interested-link:active,
-.subscription-button:active,
-.button-wanna-here:active{
+.button-wanna-here:active {
+    background-color: #756157;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.interested-link:disabled,
+.button-wanna-here:disabled,
+.subscription-button:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
 }
 
 .tel:hover,
