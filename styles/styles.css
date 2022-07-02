@@ -46,6 +46,7 @@ body {
 
 .header-logo {
     margin-left: 70px;
+    position: absolute;
 }
 
 .navigation-list {
@@ -53,7 +54,7 @@ body {
     margin: 0;
     padding: 0;
     width: 390px;
-    padding-left: 30px;
+    padding-left: 239px;
     list-style-type: none;
     display: flex;
 }
@@ -78,6 +79,20 @@ body {
 .navigation-user .navigation-link {
     min-width: 18px;
     min-height: 17px;
+}
+
+.navigation-item {
+    position: relative;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    right: 17px;
+    left: 17px;
+    bottom: -1px;
+    height: 0px;
+    border: 1px solid #756257;
+    content: "";
 }
 
 .button-wanna-here {
@@ -247,42 +262,6 @@ body {
     width: 200px;
 }
 
-.button-vk {
-    background-image: url('../images/icons/vk.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 24px;
-    height: 14px;
-    border: none;    
-    background-color: #FFFFFF;
-    padding: 13px 12px;
-    box-sizing: content-box;
-}
-
-.button-telegram {
-    background-image: url('../images/icons/telegram.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 18px;
-    height: 16px;
-    border: none;    
-    background-color: #FFFFFF;
-    padding: 12px 15px;
-    box-sizing: content-box;
-}
-
-.button-youtube {
-    background-image: url('../images/icons/youtube.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 22px;
-    height: 17px;
-    border: none;    
-    background-color: #FFFFFF;
-    padding: 12px 13px;
-    box-sizing: content-box;
-}
-
 .tel {
     font-size: 40px;
     line-height: 40px;
@@ -396,6 +375,37 @@ body {
     display: block;
 }
 
+
+.button-vk {
+    padding: 13px 12px;
+    color: #83B3D3;
+}
+
+.button-telegram {    
+    padding: 12px 15px;    
+    color: #83B3D3;
+}
+
+.button-youtube { 
+    padding: 12px 13px;
+    color: #83B3D3;
+}
+
+.button-vk:hover,
+.button-vk:focus,
+.button-telegram:hover,
+.button-telegram:focus,
+.button-youtube:hover,
+.button-youtube:focus {    
+    color: #68A2CA;
+}
+
+.button-vk:active,
+.button-telegram:active,
+.button-youtube:active {
+    color: rgba(104, 162, 202, 0.3)
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -441,25 +451,33 @@ body {
     color: rgba(117, 97, 87, 0.3);
 }
 
-.logo-htmlacademy:hover {
-    fill: red;
+.logo-htmlacademy {
+    color: #000000;
 }
 
-.button-telegram:hover {
-    fill: red;
+.logo-htmlacademy:hover,
+.logo-htmlacademy:focus {
+    color: #756157;
+}
+
+.logo-htmlacademy:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .advantages-item:nth-child(2) .advantages-title {
     background-image: url('../images/icons/house.svg');
     background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .advantages-item:nth-child(3) .advantages-title {
     background-image: url('../images/icons/burger.svg');
     background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .advantages-item:nth-child(4) .advantages-title {
     background-image: url('../images/icons/present.svg');
     background-repeat: no-repeat;
+    background-position: 50%;
 }
