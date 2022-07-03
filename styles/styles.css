@@ -46,6 +46,7 @@ body {
 
 .header-logo {
     margin-left: 70px;
+    position: absolute;
 }
 
 .navigation-list {
@@ -53,7 +54,7 @@ body {
     margin: 0;
     padding: 0;
     width: 390px;
-    padding-left: 30px;
+    padding-left: 239px;
     list-style-type: none;
     display: flex;
 }
@@ -80,6 +81,20 @@ body {
     min-height: 17px;
 }
 
+.navigation-item {
+    position: relative;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    right: 17px;
+    left: 17px;
+    bottom: -1px;
+    height: 0px;
+    border: 1px solid #756257;
+    content: "";
+}
+
 .button-wanna-here {
     font-weight: 700;
     font-size: 16px;
@@ -91,6 +106,32 @@ body {
     background: #756157;
     border-radius: 4px;
     border: #756157;
+    padding: 9px 15px 8px;
+    margin: 14px 0px 14px 20px;
+}
+
+.button-search {
+    background-image: url('../images/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 19px;
+    height: 19px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 24px 12px;
+    box-sizing: content-box;
+}
+
+.button-favorite {
+    background-image: url('../images/icons/favorite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 17px;
+    border: none;    
+    background-color: #FFFFFF;
+    padding: 24px 12px;
+    box-sizing: content-box;
 }
 
 .description-text {
@@ -219,6 +260,7 @@ body {
     border-radius: 0px 10px 10px 0px;
     min-height: 60px;
     width: 200px;
+    border: none;
 }
 
 .tel {
@@ -240,6 +282,7 @@ body {
     height: 60px;
     width: 600px;
     box-sizing: border-box;
+    border: none;
 }
 
 .subscription-container {
@@ -327,10 +370,42 @@ body {
     list-style-type: none;
     min-width: 24px;
     min-height: 17px;
+    padding: 0;
 }
 
 .footer-social-item {
     display: block;
+}
+
+
+.button-vk {
+    padding: 13px 12px;
+    color: #83B3D3;
+}
+
+.button-telegram {    
+    padding: 12px 15px;    
+    color: #83B3D3;
+}
+
+.button-youtube { 
+    padding: 12px 13px;
+    color: #83B3D3;
+}
+
+.button-vk:hover,
+.button-vk:focus,
+.button-telegram:hover,
+.button-telegram:focus,
+.button-youtube:hover,
+.button-youtube:focus {    
+    color: #68A2CA;
+}
+
+.button-vk:active,
+.button-telegram:active,
+.button-youtube:active {
+    color: rgba(104, 162, 202, 0.3)
 }
 
 .visually-hidden {
@@ -342,9 +417,81 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  .advantages-item:first-child .advantages-title,
-  .advantages-item:nth-child(5) .advantages-title {
+.advantages-item:first-child .advantages-title,
+.advantages-item:nth-child(5) .advantages-title {
     color: #FFFFFF;
-  }
+}
+
+.button-wanna-here:hover,
+.button-wanna-here:focus,
+.interested-link:hover, 
+.interested-link:focus {
+    background-color: #615048;
+    outline: none;
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+    background-color: #68A2CA;
+    outline: none;
+}
+
+.interested-link:active,
+.button-wanna-here:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.interested-link:disabled,
+.button-wanna-here:disabled,
+.subscription-button:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+}
+
+.tel:hover,
+.tel:focus {
+    color: #756157;
+}
+
+.tel:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-htmlacademy {
+    color: #000000;
+}
+
+.logo-htmlacademy:hover,
+.logo-htmlacademy:focus {
+    color: #756157;
+}
+
+.logo-htmlacademy:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.advantages-item:nth-child(2) .advantages-title {
+    background-image: url('../images/icons/house.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.advantages-item:nth-child(3) .advantages-title {
+    background-image: url('../images/icons/burger.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.advantages-item:nth-child(4) .advantages-title {
+    background-image: url('../images/icons/present.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
