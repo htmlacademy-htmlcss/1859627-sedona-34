@@ -287,6 +287,7 @@ body {
     width: 600px;
     box-sizing: border-box;
     border: none;
+    padding: 22px;
 }
 
 .subscription-container {
@@ -517,7 +518,7 @@ body {
     padding: 62px 70px 70px 70px;
 }
 
-.modal-auth {
+.modal-search {
     width: 715px;
 }
 
@@ -539,4 +540,6 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
+    margin: 0;
 }
