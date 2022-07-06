@@ -152,22 +152,36 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="date-start-container">
             <label class="date-start-label" for="date-start">Дата Заезда:</label>
-            <input class="date-start" id="date-start" type="date" name="date-start" value="2020-04-27">
+            <input class="date-start" id="date-start" name="date-start" value="27 апреля 2020">
           </div>
           <span class="date-start-description">Мы не можем отправить вас в прошлое.</span> 
           <div class="date-end-container">
             <label class="date-end-label" for="date-end">Дата Выезда:</label>
-            <input class="date-end" id="date-end" type="date" name="date-end" value="2021-09-01">
+            <input class="date-end" id="date-end" name="date-end" value="1 сентября 2021">
           </div>
           <span class="date-end-description">На эти даты есть свободные номера. Пока есть.</span>
           <div class="amount-container">
             <label class="amount-of-adults-label" for="amount-of-adults">Взрослые:</label>
-            <input class="amount-of-adults" id="amount-of-adults" type="number" name="amount-of-adults" value="2">          
+            <button class="minus">
+              <div class="rectangle"></div>
+            </button>
+            <input class="amount-of-adults" id="amount-of-adults" type="number" name="amount-of-adults" value="2" min="0" readonly>
+            <button class="plus">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>          
+            </button>
             <label class="amount-of-children-label" for="amount-of-children">Дети:</label>
             <button class="info-button">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff"/></svg>
+              <div class="circle">
+                <svg class="svg-stick" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" fill="#fff"/></svg>
+              </div>
             </button>
-            <input class="amount-of-children" id="amount-of-children" type="number" name="amount-of-children" value="1">
+            <button class="minus">
+              <div class="rectangle"></div>
+            </button>
+            <input class="amount-of-children" id="amount-of-children" type="number" name="amount-of-children" value="1" min="0" readonly>
+            <button class="plus">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+            </button>
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>

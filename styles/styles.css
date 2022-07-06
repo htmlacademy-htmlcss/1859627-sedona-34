@@ -562,6 +562,10 @@ body {
     border: none;
     border-radius: 4px;
     margin-left: 42px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "PT Sans";
 }
 
 .date-start-description {
@@ -581,6 +585,10 @@ body {
     border: none;
     border-radius: 4px;
     margin-left: 36px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "PT Sans";
 }
 
 .date-end-description {
@@ -594,14 +602,15 @@ body {
 }
 
 .amount-of-adults {
-    margin-right: 56px;
-    margin-left: 64px;
+    margin: 0;
     border: none;
     font-size: 18px;
     line-height: 21px;
-    width: 133px;
+    width: 50px;
     height: 20px;
-    padding: 15px 19px;
+    padding: 0;
+    font-weight: 400;
+    font-family: "PT Sans";
 }
 
 .amount-of-children {
@@ -612,14 +621,16 @@ body {
     width: 133px;
     height: 20px;
     padding: 15px 19px;
+    font-weight: 400;
+    font-family: "PT Sans";
+    position: relative;
 }
 
 .info-button {
     border: none;
     margin-right: 18px;
     padding: 0;
-    position: absolute;
-    top: 13px;
+    cursor: pointer;
 }
 
 .search-button {
@@ -634,4 +645,40 @@ body {
     text-transform: uppercase;
     border: none;
     padding: 0;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    position: absolute;
+    top: calc(50% - 11px)
+}
+
+.rectangle {
+    width: 13px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0,3;
+    position: absolute;
+}
+
+.circle:hover {
+    background-color: #68A2CA;
+}
+
+.svg-stick {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.minus {
+    border: none;
+    background-color: #F2F2F2;  
+    position: relative;  
 }
