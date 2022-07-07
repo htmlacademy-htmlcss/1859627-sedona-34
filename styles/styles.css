@@ -517,6 +517,7 @@ body {
     background-color: #FFFFFF;
     padding: 62px 70px 70px 70px;
     border-radius: 30px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-button {
@@ -531,6 +532,7 @@ body {
     border-radius: 53px;
     background-color: #F2F2F2;
     cursor: pointer;
+    border-color: #F2F2F2;
 }
 
 .modal-title {
@@ -555,6 +557,10 @@ body {
     line-height: 26px;
 }
 
+.amount-of-children-label {
+    margin-left: 75px;
+}
+
 .date-start {
     width: 380px;
     height: 20px;
@@ -565,7 +571,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
+    background: #F2F2F2;
 }
 
 .date-start-description {
@@ -588,7 +595,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
 }
 
 .date-end-description {
@@ -602,27 +609,27 @@ body {
 }
 
 .amount-of-adults {
-    margin: 0;
+    margin-left: 125px;
     border: none;
     font-size: 18px;
     line-height: 21px;
-    width: 50px;
+    width: 30px;
     height: 20px;
     padding: 0;
     font-weight: 400;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
 }
 
 .amount-of-children {
     border: none;
-    margin-left: 43px;
+    margin-left: 79px;
     font-size: 18px;
     line-height: 21px;
-    width: 133px;
+    width: 30px;
     height: 20px;
-    padding: 15px 19px;
+    padding: 0;
     font-weight: 400;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     position: relative;
 }
 
@@ -645,6 +652,8 @@ body {
     text-transform: uppercase;
     border: none;
     padding: 0;
+    cursor: pointer;
+    font-family: "PT Sans", sans-serif;
 }
 
 .circle {
@@ -660,7 +669,7 @@ body {
     width: 13px;
     height: 1px;
     background-color: #000000;
-    opacity: 0,3;
+    opacity: 0.3;
     position: absolute;
 }
 
@@ -677,8 +686,152 @@ body {
     transform: translate(0,-50%);
 }
 
-.minus {
+.minus-adults {
     border: none;
-    background-color: #F2F2F2;  
-    position: relative;  
+    background-color: #F2F2F2; 
+    position: absolute;
+    left: 174px;
+    top: 50%;
+    padding: 0;
+    cursor: pointer;
+    width: 13px;
+    height: 1px;
+}
+
+.minus-children {
+    border: none;
+    background-color: #F2F2F2; 
+    position: absolute;
+    left: 460px;
+    top: 50%;
+    padding: 0;
+    cursor: pointer;
+    width: 13px;
+    height: 1px;
+}
+
+.plus {
+    border: none;
+    background-color: #F2F2F2; 
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.search-button:hover {
+    background-color: #68A2CA;
+}
+
+.search-button:focus {
+    background-color: #68A2CA;
+    border: 3px solid #756257;
+}
+
+.search-button:active {
+    background-color: #68A2CA;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.plus:hover {
+    opacity: 1;
+}
+
+.plus:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.minus-adults:hover {
+    opacity: 1;
+}
+
+.minus-adults:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.minus-children:hover {
+    opacity: 1;
+}
+
+.minus-children:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    border: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    fill-opacity: 0.3;
+    border: 3px solid #E6E6E6;
+}
+
+.date-start:hover {
+    background: #E6E6E6;
+}
+
+.date-start:focus {
+    border: 3px solid #83B3D3;
+    background: #E6E6E6;
+}
+
+.date-start:active {
+    border: 2px solid #000000;
+    background: #FFFFFF;
+}
+
+.date-end:hover {
+    background: #E6E6E6;
+}
+
+.date-end:focus {
+    border: 3px solid #83B3D3;
+    background: #E6E6E6;
+}
+
+.date-end:active {
+    border: 2px solid #000000;
+    background: #FFFFFF;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #333333;
+    position: absolute;
+    left: 475px;
+    top: 360px;
+}
+
+.rectangle-black {
+    width: 216px;
+    height: 110px;
+    background: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    left: 353px;
+    top: 369px;
+    color: #FFFFFF;
+    padding: 15px 18px 18px 22px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+}
+
+.calendar-icon {
+    border: none;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    opacity: 0.3;
 }

@@ -153,16 +153,22 @@
           <div class="date-start-container">
             <label class="date-start-label" for="date-start">Дата Заезда:</label>
             <input class="date-start" id="date-start" name="date-start" value="27 апреля 2020">
+            <button class="calendar-icon">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" fill="#000"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
+            </button>
           </div>
           <span class="date-start-description">Мы не можем отправить вас в прошлое.</span> 
           <div class="date-end-container">
             <label class="date-end-label" for="date-end">Дата Выезда:</label>
             <input class="date-end" id="date-end" name="date-end" value="1 сентября 2021">
+            <button class="calendar-icon">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" fill="#000"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
+            </button>
           </div>
           <span class="date-end-description">На эти даты есть свободные номера. Пока есть.</span>
           <div class="amount-container">
             <label class="amount-of-adults-label" for="amount-of-adults">Взрослые:</label>
-            <button class="minus">
+            <button class="minus-adults">
               <div class="rectangle"></div>
             </button>
             <input class="amount-of-adults" id="amount-of-adults" type="number" name="amount-of-adults" value="2" min="0" readonly>
@@ -175,7 +181,7 @@
                 <svg class="svg-stick" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" fill="#fff"/></svg>
               </div>
             </button>
-            <button class="minus">
+            <button class="minus-children">
               <div class="rectangle"></div>
             </button>
             <input class="amount-of-children" id="amount-of-children" type="number" name="amount-of-children" value="1" min="0" readonly>
@@ -186,6 +192,8 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
       </section>
+      <div class="triangle"></div>
+      <div class="rectangle-black">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</div>
     </div>
   </div>
   </body>
