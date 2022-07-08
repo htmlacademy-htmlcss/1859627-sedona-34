@@ -559,11 +559,12 @@ body {
 }
 
 .amount-of-children-label {
-    margin-left: 75px;
+    margin-left: 112px;
+    width: 54px;
 }
 
 .date-start {
-    width: 380px;
+    width: 374px;
     height: 20px;
     padding: 12px 20px;
     border: 3px solid transparent;
@@ -588,7 +589,7 @@ body {
 }
 
 .date-end {
-    width: 380px;
+    width: 374px;
     height: 20px;
     padding: 12px 20px;
     border: 3px solid transparent;
@@ -631,7 +632,6 @@ body {
     font-size: 18px;
     line-height: 21px;
     width: 25px;
-    height: 20px;
     padding: 0;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
@@ -641,9 +641,11 @@ body {
 
 .info-button {
     border: none;
-    margin-right: 18px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     cursor: pointer;
+    position: relative;
 }
 
 .search-button {
@@ -669,6 +671,7 @@ body {
 
 .children-container {
     display: flex;
+    position: relative;
 }
 
 .circle {
@@ -677,7 +680,7 @@ body {
     border-radius: 50%;
     background-color: #83B3D3;
     position: absolute;
-    top: calc(50% - 11px)
+    transform: translate(0,-50%);
 }
 
 .circle:hover {
@@ -709,8 +712,8 @@ body {
     border: none;
     background-color: #F2F2F2; 
     position: absolute;
-    left: 460px;
-    top: 50%;
+    left: 225px;
+    top: calc(50% - 11px);
     padding: 0;
     cursor: pointer;
     width: 13px;
