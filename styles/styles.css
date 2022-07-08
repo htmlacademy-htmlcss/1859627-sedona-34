@@ -532,7 +532,7 @@ body {
     border-radius: 53px;
     background-color: #F2F2F2;
     cursor: pointer;
-    border-color: #F2F2F2;
+    border: none;
 }
 
 .modal-title {
@@ -546,6 +546,7 @@ body {
 
 .date-start-container {
     margin-top: 63px;
+    position: relative;
 }
 
 .date-start-label,
@@ -564,8 +565,8 @@ body {
 .date-start {
     width: 380px;
     height: 20px;
-    padding: 15px 20px;
-    border: none;
+    padding: 12px 20px;
+    border: 3px solid transparent;
     border-radius: 4px;
     margin-left: 42px;
     font-size: 18px;
@@ -583,19 +584,21 @@ body {
 
 .date-end-container {
     margin-top: 11px;
+    position: relative;
 }
 
 .date-end {
     width: 380px;
     height: 20px;
-    padding: 15px 20px;
-    border: none;
+    padding: 12px 20px;
+    border: 3px solid transparent;
     border-radius: 4px;
     margin-left: 36px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
+    background: #F2F2F2;
 }
 
 .date-end-description {
@@ -604,20 +607,22 @@ body {
 }
 
 .amount-container {
+    display: flex;
     margin: 11px 0 40px 0;
     position: relative;
 }
 
 .amount-of-adults {
-    margin-left: 125px;
+    margin-left: 117px;
     border: none;
     font-size: 18px;
     line-height: 21px;
-    width: 30px;
-    height: 20px;
+    width: 25px;
     padding: 0;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
+    background: #F2F2F2;
+    text-align: center;
 }
 
 .amount-of-children {
@@ -625,12 +630,13 @@ body {
     margin-left: 79px;
     font-size: 18px;
     line-height: 21px;
-    width: 30px;
+    width: 25px;
     height: 20px;
     padding: 0;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
-    position: relative;
+    background: #F2F2F2;
+    text-align: center;
 }
 
 .info-button {
@@ -656,6 +662,15 @@ body {
     font-family: "PT Sans", sans-serif;
 }
 
+.adults-container {
+    display: flex;
+    position: relative;
+}
+
+.children-container {
+    display: flex;
+}
+
 .circle {
     width: 25px;
     height: 25px;
@@ -663,14 +678,6 @@ body {
     background-color: #83B3D3;
     position: absolute;
     top: calc(50% - 11px)
-}
-
-.rectangle {
-    width: 13px;
-    height: 1px;
-    background-color: #000000;
-    opacity: 0.3;
-    position: absolute;
 }
 
 .circle:hover {
@@ -691,7 +698,7 @@ body {
     background-color: #F2F2F2; 
     position: absolute;
     left: 174px;
-    top: 50%;
+    top: calc(50% - 11px);
     padding: 0;
     cursor: pointer;
     width: 13px;
@@ -710,12 +717,26 @@ body {
     height: 1px;
 }
 
-.plus {
+.plus-adults {
     border: none;
     background-color: #F2F2F2; 
     padding: 0;
     cursor: pointer;
     opacity: 0.3;
+    position: absolute;
+    top: 25%;
+    left: 256px;
+}
+
+.plus-children {
+    border: none;
+    background-color: #F2F2F2; 
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.3;
+    position: absolute;
+    top: 25%;
+    right: 30px;
 }
 
 .search-button:hover {
@@ -767,6 +788,7 @@ body {
 .modal-close-button:focus {
     border: 3px solid #83B3D3;
     background-color: #E6E6E6;
+    outline: none;
 }
 
 .modal-close-button:active {
@@ -782,11 +804,14 @@ body {
 .date-start:focus {
     border: 3px solid #83B3D3;
     background: #E6E6E6;
+    outline: none;
 }
 
 .date-start:active {
     border: 2px solid #000000;
     background: #FFFFFF;
+    padding: 13px 21px;
+    outline: none;
 }
 
 .date-end:hover {
@@ -796,11 +821,14 @@ body {
 .date-end:focus {
     border: 3px solid #83B3D3;
     background: #E6E6E6;
+    outline: none;
 }
 
 .date-end:active {
     border: 2px solid #000000;
     background: #FFFFFF;
+    padding: 13px 21px;
+    outline: none;
 }
 
 .triangle {
@@ -834,4 +862,12 @@ body {
     background-color: #F2F2F2;
     cursor: pointer;
     opacity: 0.3;
+    position: absolute;
+    right: 19px;
+    top: calc(50% - 10px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
