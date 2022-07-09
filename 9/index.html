@@ -168,27 +168,31 @@
           </div>
           <span class="date-end-description">На эти даты есть свободные номера. Пока есть.</span>
           <div class="amount-container">
-            <label class="amount-of-adults-label" for="amount-of-adults">Взрослые:</label>
-            <button class="minus-adults">
-              <div class="rectangle"></div>
-            </button>
-            <input class="amount-of-adults" id="amount-of-adults" type="number" name="amount-of-adults" value="2" min="0" readonly>
-            <button class="plus">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>          
-            </button>
-            <label class="amount-of-children-label" for="amount-of-children">Дети:</label>
-            <button class="info-button">
-              <div class="circle">
-                <svg class="svg-stick" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" fill="#fff"/></svg>
-              </div>
-            </button>
-            <button class="minus-children">
-              <div class="rectangle"></div>
-            </button>
-            <input class="amount-of-children" id="amount-of-children" type="number" name="amount-of-children" value="1" min="0" readonly>
-            <button class="plus">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
-            </button>
+            <div class="adults-container">
+              <label class="amount-of-adults-label" for="amount-of-adults">Взрослые:</label>
+              <button class="minus-adults">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+              </button>
+              <input class="amount-of-adults" id="amount-of-adults" type="number" name="amount-of-adults" value="2" min="0" readonly>
+              <button class="plus-adults">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>          
+              </button>
+            </div>
+            <div class="children-container">
+              <label class="amount-of-children-label" for="amount-of-children">Дети:</label>
+              <button class="info-button">
+                <div class="circle">
+                  <svg class="svg-stick" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" fill="#fff"/></svg>
+                </div>
+              </button>
+              <button class="minus-children">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+              </button>
+              <input class="amount-of-children" id="amount-of-children" type="number" name="amount-of-children" value="1" min="0" readonly>
+              <button class="plus-children">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+              </button>
+            </div>
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
