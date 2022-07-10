@@ -550,13 +550,15 @@ body {
 }
 
 .date-start-box {
+    margin-left: 42px;
     display: flex;
     flex-wrap: wrap;
     width: 420px;
     position: relative;
 }
 
-.date-end-box {
+.date-end-box {    
+    margin-left: 36px;
     display: flex;
     flex-wrap: wrap;
     width: 420px;
@@ -589,13 +591,13 @@ body {
     width: 54px;
 }
 
-.date-start {
+.date-start,
+.date-end {
     width: 374px;
     height: 20px;
     padding: 12px 20px;
     border: 3px solid transparent;
     border-radius: 4px;
-    margin-left: 42px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -604,7 +606,6 @@ body {
 }
 
 .date-start-description {
-    margin-left: 42px;
     color: #FF5757;
     font-size: 16px;
     line-height: 21px;
@@ -616,22 +617,7 @@ body {
     position: relative;
 }
 
-.date-end {
-    width: 374px;
-    height: 20px;
-    padding: 12px 20px;
-    border: 3px solid transparent;
-    border-radius: 4px;
-    margin-left: 36px;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    font-family: "PT Sans", sans-serif;
-    background: #F2F2F2;
-}
-
 .date-end-description {
-    margin-left: 36px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
@@ -644,7 +630,8 @@ body {
     align-items: center;
 }
 
-.amount-of-adults {
+.amount-of-adults,
+.amount-of-children {
     border: none;
     font-size: 18px;
     line-height: 21px;
@@ -657,26 +644,22 @@ body {
     margin-left: 32px;
 }
 
-.amount-of-children {
-    border: none;
-    margin-left: 18px;
-    font-size: 18px;
-    line-height: 21px;
-    width: 69px;
-    padding: 0;
-    font-weight: 400;
-    font-family: "PT Sans", sans-serif;
-    background: #F2F2F2;
-    text-align: center;
-}
-
 .info-button {
     border: none;
-    width: 25px;
-    height: 25px;
     padding: 0;
     cursor: pointer;
     position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.info-button:hover {
+    background-color: #68A2CA;
 }
 
 .search-button {
@@ -695,23 +678,23 @@ body {
     font-family: "PT Sans", sans-serif;
 }
 
-.adults-container {
-    display: flex;
-    position: relative;
-    width: 133px;
-    height: 50px;
-    margin-left: 64px;
-    align-items: center;
-    border-radius: 4px;
-}
-
+.adults-container,
 .children-container {
     display: flex;
     position: relative;
     width: 133px;
     height: 50px;
-    margin-left: 18px;
     align-items: center;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+}
+
+.adults-container {    
+    margin-left: 64px;
+}
+
+.children-container {
+    margin-left: 18px;
 }
 
 .circle {
@@ -761,15 +744,14 @@ body {
     background-color: #68A2CA;
 }
 
-.search-button:focus {
+.search-button:focus-visible {
     background-color: #68A2CA;
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
 }
 
 .search-button:active {
     background-color: #68A2CA;
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .plus-icon:hover {
@@ -781,12 +763,23 @@ body {
     border-radius: 4px;
 }
 
+.minus-icon {
+    color: inherit;
+    opacity: 0.3;
+}
+
 .minus-icon:hover {
+    color: #000000;
     opacity: 1;
 }
 
-.minus-icon:focus {
-    border: 3px solid #83B3D3;
+.minus-icon:focus-visible {    
+    color: green;
+    opacity: 1;
+}
+
+.minus-button:focus-visible {
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
@@ -845,8 +838,9 @@ body {
     border-right: 9px solid transparent;
     border-bottom: 9px solid #333333;
     position: absolute;
-    left: 475px;
-    top: 360px;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .rectangle-black {
@@ -860,6 +854,10 @@ body {
     padding: 15px 18px 18px 22px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
+    z-index: 1;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .calendar-icon {
@@ -868,8 +866,8 @@ body {
     cursor: pointer;
     opacity: 0.3;
     position: absolute;
-    left: 428px;
-    top: 17px;
+    right: 19px;
+    top: 18px;
 }
 
 input::-webkit-outer-spin-button,
