@@ -545,6 +545,7 @@ body {
 }
 
 .date-start-container {
+    display: flex;
     margin-top: 63px;
     position: relative;
 }
@@ -566,6 +567,7 @@ body {
 }
 
 .date-start-label {
+    padding: 12px 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -573,6 +575,7 @@ body {
 }
 
 .date-end-label {
+    padding: 12px 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -613,6 +616,7 @@ body {
 }
 
 .date-end-container {
+    display: flex;
     margin-top: 11px;
     position: relative;
 }
@@ -635,13 +639,13 @@ body {
     border: none;
     font-size: 18px;
     line-height: 21px;
-    width: 69px;
+    width: 30px;
     padding: 0;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
     background: #F2F2F2;
     text-align: center;
-    margin-left: 32px;
+    margin-left: 52px;
 }
 
 .info-button {
@@ -754,32 +758,32 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.plus-icon:hover {
-    opacity: 1;
-}
-
-.plus-icon:focus {
-    border: 3px solid #83B3D3;
-    border-radius: 4px;
-}
-
-.minus-icon {
+.plus-icon {
     color: inherit;
     opacity: 0.3;
 }
 
-.minus-icon:hover {
+.plus-icon:hover {
     color: #000000;
     opacity: 1;
 }
 
-.minus-icon:focus-visible {    
-    color: green;
-    opacity: 1;
+.plus-button:focus-visible {
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.minus-icon {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.minus-icon:hover {
+    color: rgba(0, 0, 0, 1);
 }
 
 .minus-button:focus-visible {
     outline: 3px solid #83B3D3;
+    color: rgba(0, 0, 0, 1);
     border-radius: 4px;
 }
 
@@ -868,6 +872,7 @@ body {
     position: absolute;
     right: 19px;
     top: 18px;
+    padding: 0;
 }
 
 input::-webkit-outer-spin-button,
