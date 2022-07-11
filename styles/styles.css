@@ -734,7 +734,6 @@ body {
     background-color: #F2F2F2; 
     padding: 0;
     cursor: pointer;
-    opacity: 0.3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -758,33 +757,26 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.plus-icon {
-    color: inherit;
-    opacity: 0.3;
-}
-
-.plus-icon:hover {
-    color: #000000;
-    opacity: 1;
-}
-
-.plus-button:focus-visible {
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
-}
-
-.minus-icon {
+.minus-button,
+.plus-button {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.minus-icon:hover {
+.minus-button:hover,
+.plus-button:hover {
     color: rgba(0, 0, 0, 1);
 }
 
-.minus-button:focus-visible {
+.minus-button:focus-visible,
+.plus-button:focus-visible {
     outline: 3px solid #83B3D3;
     color: rgba(0, 0, 0, 1);
     border-radius: 4px;
+}
+
+.minus-button:active,
+.plus-button:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-close-button:hover {
