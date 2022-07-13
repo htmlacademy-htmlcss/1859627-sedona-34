@@ -562,11 +562,11 @@ body {
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
 }
-/*
+
 .modal-container.hidden {
   display: none;
 }
-*/
+
 .modal {
   position: relative;
   margin: auto;
@@ -705,13 +705,13 @@ body {
   border: none;
   font-size: 18px;
   line-height: 21px;
-  width: 30px;
+  width: 133px;
+  height: 50px;
   padding: 0;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
   background: #f2f2f2;
   text-align: center;
-  margin-left: 52px;
 }
 
 .info-button {
@@ -861,57 +861,42 @@ body {
   fill-opacity: 0.3;
 }
 
-.date-start:hover {
+.date-start:hover,
+.date-end:hover,
+.amount-of-adults:hover,
+.amount-of-children:hover,
+.amount-of-adults:hover~button,
+.amount-of-children:hover~button {
   background: #e6e6e6;
 }
 
-.date-start:focus {
-  border: 3px solid #83b3d3;
-  background: #e6e6e6;
-  outline: none;
-}
-
-.date-start:active {
-  border: 2px solid #000000;
-  background: #ffffff;
-  padding: 13px 25px 13px 17px;
-  outline: none;
-}
-
-.date-end:hover {
-  background: #e6e6e6;
-}
-
+.date-start:focus,
 .date-end:focus {
   border: 3px solid #83b3d3;
   background: #e6e6e6;
   outline: none;
 }
 
+.date-start:active,
 .date-end:active {
   border: 2px solid #000000;
   background: #ffffff;
   padding: 13px 25px 13px 17px;
   outline: none;
 }
-/*
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid #333333;
-  position: absolute;
-  top: 31px;
-  left: 50%;
-  transform: translateX(-50%);
+
+.amount-of-adults:focus,
+.amount-of-children:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
 }
-*/
-/*
-.triangle.hidden {
-  display: none;
+
+.amount-of-adults:active,
+.amount-of-children:active {
+  outline: 2px solid #000000;
+  border-radius: 4px;
 }
-*/
+
 .rectangle-black {
   width: 216px;
   min-height: 110px;
@@ -924,29 +909,30 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   z-index: 1;
-  top: 40px;
+  top: 54px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .triangle-black::before {
+  content: "";
   width: 0;
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
   border-bottom: 9px solid #333333;
   position: absolute;
-  top: 31px;
+  top: -9px;
   left: 50%;
   transform: translateX(-50%);
   max-height: 100vh;
   overflow: auto;
 }
-/*
+
 .rectangle-black.hidden {
   display: none;
 }
-*/
+
 .calendar-icon {
   border: none;
   background-color: #f2f2f2;
@@ -966,6 +952,18 @@ body {
 .amount-of-children::-webkit-outer-spin-button,
 .amount-of-children::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.amount-of-children,
+.amount-of-adults {
+  -moz-appearance: textfield;
+}
+
+.amount-of-children:hover,
+.amount-of-children:focus,
+.amount-of-adults:hover,
+.amount-of-adults:focus {
+  -moz-appearance: number-input;
 }
 
 .info-container {
