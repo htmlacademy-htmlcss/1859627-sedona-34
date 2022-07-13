@@ -88,7 +88,7 @@ body {
 .navigation-catalog:hover,
 .button-search:hover,
 .button-favorite:hover {
-  background-color: rgb(223, 237, 246)
+  background-color: rgb(223, 237, 246);
 }
 
 .navigation-about:focus,
@@ -103,7 +103,7 @@ body {
 .navigation-catalog:active,
 .button-search:active,
 .button-favorite:active {
-  background-color: rgb(129,180,211)
+  background-color: rgb(129, 180, 211);
 }
 
 .navigation-item {
@@ -712,6 +712,7 @@ body {
   font-family: "PT Sans", sans-serif;
   background: #f2f2f2;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .info-button {
@@ -865,8 +866,8 @@ body {
 .date-end:hover,
 .amount-of-adults:hover,
 .amount-of-children:hover,
-.amount-of-adults:hover~button,
-.amount-of-children:hover~button {
+.amount-of-adults:hover ~ button,
+.amount-of-children:hover ~ button {
   background: #e6e6e6;
 }
 
@@ -952,11 +953,6 @@ body {
 .amount-of-children::-webkit-outer-spin-button,
 .amount-of-children::-webkit-inner-spin-button {
   -webkit-appearance: none;
-}
-
-.amount-of-children,
-.amount-of-adults {
-  -moz-appearance: textfield;
 }
 
 .amount-of-children:hover,
