@@ -42,7 +42,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  height: 65px;
+  min-height: 65px;
 }
 
 .header-logo {
@@ -75,13 +75,35 @@ body {
   text-decoration: none;
   color: #000000;
   background: #ffffff;
-  padding: 20px 17px;
+  padding: 20px 17px 19px;
   font-family: "PT Sans", sans-serif;
 }
 
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 17px;
+}
+
+.navigation-about:hover,
+.navigation-catalog:hover,
+.button-search:hover,
+.button-favorite:hover {
+  background-color: rgb(223, 237, 246);
+}
+
+.navigation-about:focus,
+.navigation-catalog:focus,
+.button-search:focus,
+.button-favorite:focus {
+  background-color: rgb(223, 237, 246);
+  outline: none;
+}
+
+.navigation-about:active,
+.navigation-catalog:active,
+.button-search:active,
+.button-favorite:active {
+  background-color: rgb(129, 180, 211);
 }
 
 .navigation-item {
@@ -209,7 +231,15 @@ body {
   font-size: 22px;
   line-height: 26px;
   background: #ffffff;
-  margin: 29px auto 56px;
+  margin: 29px auto 0;
+}
+
+.interested-description-continue {
+  font-size: 22px;
+  line-height: 26px;
+  background: #ffffff;
+  margin: 0 auto 56px 304px;
+  text-align: start;
 }
 
 .interested-link {
@@ -280,6 +310,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background: #ffffff;
+  padding: 5px 0;
 }
 
 .subscription-input {
@@ -293,6 +324,18 @@ body {
   box-sizing: border-box;
   border: none;
   padding: 22px;
+}
+
+.subscription-input:hover {
+  opacity: 0.7;
+}
+
+.subscription-input:focus {
+  opacity: 0.7;
+}
+
+.subscription-input:active {
+  opacity: 0.3;
 }
 
 .subscription-container {
@@ -372,7 +415,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 70px;
-  padding: 37px 0 30px;
+  padding: 40px 0 30px;
 }
 
 .footer-social-list {
@@ -382,6 +425,7 @@ body {
   min-width: 24px;
   min-height: 17px;
   padding: 0;
+  margin: 0;
 }
 
 .footer-social-item {
@@ -399,7 +443,7 @@ body {
 }
 
 .button-youtube {
-  padding: 12px 13px 13px 12px;
+  padding: 11px 13px 12px 12px;
   color: #83b3d3;
 }
 
@@ -519,6 +563,10 @@ body {
   background: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container.hidden {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -580,6 +628,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   display: flex;
+  width: 113px;
 }
 
 .date-end-label {
@@ -588,6 +637,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   display: flex;
+  width: 119px;
 }
 
 .amount-of-adults-label,
@@ -597,16 +647,22 @@ body {
   line-height: 26px;
 }
 
+.amount-of-adults-label {
+  width: 91px;
+  padding: 12px 0;
+}
+
 .amount-of-children-label {
   margin-left: 56px;
   width: 54px;
+  padding: 12px 0;
 }
 
 .date-start,
 .date-end {
   width: 374px;
   height: 20px;
-  padding: 12px 16px;
+  padding: 12px 24px 12px 16px;
   border: 3px solid transparent;
   border-radius: 4px;
   font-size: 18px;
@@ -641,7 +697,7 @@ body {
   display: flex;
   margin: 11px 0 40px 0;
   position: relative;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .amount-of-adults,
@@ -649,18 +705,19 @@ body {
   border: none;
   font-size: 18px;
   line-height: 21px;
-  width: 30px;
+  width: 133px;
+  height: 50px;
   padding: 0;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
   background: #f2f2f2;
   text-align: center;
-  margin-left: 52px;
+  -moz-appearance: textfield;
 }
 
 .info-button {
   border: none;
-  padding: 0;
+  margin: 14px 0 11px;
   cursor: pointer;
   position: relative;
   width: 25px;
@@ -805,55 +862,45 @@ body {
   fill-opacity: 0.3;
 }
 
-.date-start:hover {
+.date-start:hover,
+.date-end:hover,
+.amount-of-adults:hover,
+.amount-of-children:hover,
+.amount-of-adults:hover ~ button,
+.amount-of-children:hover ~ button {
   background: #e6e6e6;
 }
 
-.date-start:focus {
-  border: 3px solid #83b3d3;
-  background: #e6e6e6;
-  outline: none;
-}
-
-.date-start:active {
-  border: 2px solid #000000;
-  background: #ffffff;
-  padding: 13px 21px;
-  outline: none;
-}
-
-.date-end:hover {
-  background: #e6e6e6;
-}
-
+.date-start:focus,
 .date-end:focus {
   border: 3px solid #83b3d3;
   background: #e6e6e6;
   outline: none;
 }
 
+.date-start:active,
 .date-end:active {
   border: 2px solid #000000;
   background: #ffffff;
-  padding: 13px 21px;
+  padding: 13px 25px 13px 17px;
   outline: none;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid #333333;
-  position: absolute;
-  top: 31px;
-  left: 50%;
-  transform: translateX(-50%);
+.amount-of-adults:focus,
+.amount-of-children:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.amount-of-adults:active,
+.amount-of-children:active {
+  outline: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .rectangle-black {
   width: 216px;
-  height: 110px;
+  min-height: 110px;
   background: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -863,9 +910,28 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   z-index: 1;
-  top: 40px;
+  top: 54px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.triangle-black::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.rectangle-black.hidden {
+  display: none;
 }
 
 .calendar-icon {
@@ -879,9 +945,21 @@ body {
   padding: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.amount-of-adults::-webkit-outer-spin-button,
+.amount-of-adults::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.amount-of-children::-webkit-outer-spin-button,
+.amount-of-children::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.amount-of-children:hover,
+.amount-of-children:focus,
+.amount-of-adults:hover,
+.amount-of-adults:focus {
+  -moz-appearance: number-input;
 }
 
 .info-container {
