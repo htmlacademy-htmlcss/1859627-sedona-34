@@ -182,7 +182,7 @@ body {
   text-transform: uppercase;
   padding: 0;
   width: 620px;
-  margin: 59px auto 31px;
+  margin: 63px auto 31px;
 }
 
 .advantages-list {
@@ -989,6 +989,8 @@ body {
 }
 
 .index-background {
+  display: flex;
+  justify-content: center;
   background-image:  url("../images/clip.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
