@@ -993,6 +993,7 @@ body {
   justify-content: center;
   background-image:  url("../images/clip.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  background-color: rgb(218, 232, 241);
   background-position-y: bottom;
   width: 1200px;
   margin: auto;
